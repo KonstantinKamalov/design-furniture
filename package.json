@@ -29,6 +29,8 @@
 		"rename": "^1.0.4"
 	},
 	"dependencies": {
-		"gulp-group-css-media-queries": "^1.2.2"
+		"gulp-group-css-media-queries": "^1.2.2",
+		"jquery": "^3.6.0",
+		"slick-carousel": "^1.8.1"
 	}
 }
