@@ -8,26 +8,52 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.css">
 	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
 	<title>design-furniture</title>
 </head>
 
 <body>
-	<header class="header">
-		<div class="container no-gutters">
-			<div class="left-section">
-				<ul class="nav">
+	<header id="header">
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-1"></div>
+				<div class="col-1 logo">
 					<img src="img/logo.svg" alt="logo">
-					<li><a href="#">Мебель</a></li>
-					<li><a href="#">Освещение</a></li>
-					<li><a href="#">Текстиль</a></li>
-				</ul>
-			</div>
-			<div class="right-section">
-				<img src="img/search.svg" alt="search">
-				<img src="img/bag.svg" alt="bag">
+				</div>
+				<div class="col-4 nav">
+					<ul>
+						<li><a href="#">Мебель</a></li>
+						<li><a href="#">Освещение</a></li>
+						<li><a href="#">Текстиль</a></li>
+					</ul>
+				</div>
+				<div class="col-6 buttons">
+					<img src="img/search.svg" alt="search">
+					<img src="img/bag.svg" alt="bag">
+				</div>
 			</div>
 		</div>
 	</header>
+	<section id="slider">
+		<div class="container">
+			<div class="row no-gutters slider">
+				<div class="col-4">
+					<h1>Дизайнерская мебель</h1>
+					<p>Кресло "Антиква"</p>
+					<span>$380</span>
+					<span>$240</span>
+					<button>Купить</button>
+				</div>
+				<div class="col-4 armchair">
+					<img src="img/armchair.png" alt="armchair">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="inc/jquery-3.6.0.min.js"></script>
+	<script src="inc/slick.min.js"></script>
 	<script src="js/script.min.js"></script>
 </body>
 

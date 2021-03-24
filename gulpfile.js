@@ -9,6 +9,7 @@ let path = {
 		html: project_folder + "/",
 		css: project_folder + "/css/",
 		js: project_folder + "/js/",
+		inc: project_folder + "/inc/",
 		img: project_folder + "/img/",
 		fonts: project_folder + "/fonts/",
 	},
@@ -18,6 +19,7 @@ let path = {
 		css: source_folder + "/scss/style.scss",
 		otherCss: source_folder + "/css/**/*.css",
 		js: source_folder + "/js/script.js",
+		inc: source_folder + "/inc/**/*.js",
 		img: source_folder + "/img/**/*.{svg,png,jpg,gif,ico,webp}",
 		fonts: source_folder + "/fonts/*.ttf",
 	},
@@ -105,6 +107,8 @@ function othercss() {
 
 /*Собираем в dist все js файлы */
 function js() {
+	src(path.src.inc)
+		.pipe(dest(path.build.inc));
 	return src(path.src.js)
 		.pipe(fileinclude())
 		.pipe(dest(path.build.js))
